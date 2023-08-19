@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+    transition: all .25s ease-in;
+}
+
+nav{
+    padding: 0;
+    width: 10%;
+}
+
+nav ul{
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #001;
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+nav ul li{
+    width: 100%;
+}
+
+.link{
+    display: block;
+    padding: 22px;
+    color: #ffc;
+    font-size: 2rem;
+    /* width: inherit; */
+    text-align: center;
+    transition: color .25s ease-in, background .5s ease-out;
+    border-radius: 4px;
+}
+
+#active, .link:hover{
+    color: #001;
+    background-color: #ffc;
+}
+
+#active{
+    font-weight: 700;
+}
+
+#Home{
+    background: url('Images/Home.jpg');
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+
+}
+
+h1{
+    color: #ffefff;
+
+}
+
+h1 span{
+    color: #001;
+}
+
+#Home p{
+    width: 50%;
+    color: #fff;
+}
+
+#Home a, #Menu button, #special button{
+    padding: 12px 26px;
+    background-color: transparent;
+    color: #ffc;
+    border: 2px solid #ffc;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+#Home a:hover{
+    color: #002;
+    background-color: #ffc;
+}
+
+#Home .Right{
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    font-size: 40px;
+}
+
+
+#Menu{
+    margin: 20px auto;
+    width: 75%;
+}
+
+#Menu h2{
+    color: #002;
+
+}
+
+.food-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.food{
+    width: 25%;
+    margin: 20px;
+}
+
+.food img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.food-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.food img:hover{
+    transform: scale(1.1rem);
+}
+
+#Menu button, .main button{
+    border-color: #003;
+    color: #003;
+    margin: 0;
+}
+
+#Menu button:hover{
+    background-color: #003;
+    color: #ffc;
+
+}
+.main img{
+    width: 60%;
+
+}
+.main{
+    width: 75%;
+    height: auto;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#special{
+    margin: 3% 15%;
+}
+
+.main p{
+    line-height: 1.7rem;
+}
+
