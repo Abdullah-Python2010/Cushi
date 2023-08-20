@@ -34,9 +34,8 @@ nav ul li{
     padding: 22px;
     color: #ffc;
     font-size: 2rem;
-    /* width: inherit; */
     text-align: center;
-    transition: color .25s ease-in, background .5s ease-out;
+    transition: color .25s ease-in, background .25s ease-out;
     border-radius: 4px;
 }
 
@@ -72,7 +71,7 @@ h1{
 }
 
 h1 span{
-    color: #001;
+    color: #006;
 }
 
 #Home p{
@@ -80,7 +79,7 @@ h1 span{
     color: #fff;
 }
 
-#Home a, #Menu button, #special button{
+#Home a, #Menu button, #special button, .btn{
     padding: 12px 26px;
     background-color: transparent;
     color: #ffc;
@@ -172,5 +171,106 @@ h1 span{
 
 .main p{
     line-height: 1.7rem;
+    margin: 12px 0;
 }
 
+#Cart-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart{
+    display: flex;
+    flex-direction: column;
+}
+
+.total{
+    background-color: #003;
+    color: white;
+}
+
+#Sign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: linear-gradient(135deg, #ffc, #fcf);
+}
+
+.Sign-up{
+    background-color: #003;
+    padding: 10px 20px 20px;
+    border-radius: 8px;
+    height: 70vh;
+    width: 40%;
+}
+
+hr{
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+    background-color: #fcf;
+}
+
+
+.Sign-up h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 5px 0;
+    color: #ffc;
+    animation: grow 1s ease-in-out 0s infinite ;
+}
+
+@keyframes grow {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.3rem);
+    }
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 10px 16px;
+    width: 80%;
+    display: block;
+    transform: translateX(20px);
+    outline: none !important;
+}
+
+.input_div{
+    margin: 10px 0;
+}
+
+.btn{
+    color: #ffc;
+    border-color: #ffc;
+    margin: 20px;
+
+}
+
+.btn:hover{
+    color: #002;
+    background-color: #ffc;
+}
+
+.second:hover{
+    color: #ffc;
+    background-color: #0a0;
+}
+
+label{
+    color: #fcf;
+}
+
+label span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
