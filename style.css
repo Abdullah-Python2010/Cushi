@@ -7,6 +7,9 @@
     transition: all .25s ease-in;
 }
 
+
+/*  Navbar Styling*/
+
 nav{
     padding: 0;
     width: 10%;
@@ -47,6 +50,13 @@ nav ul li{
 #active{
     font-weight: 700;
 }
+
+
+
+
+/*  Home Page  */
+
+
 
 #Home{
     background: url('Images/Home.jpg');
@@ -101,6 +111,15 @@ h1 span{
 }
 
 
+
+
+
+
+
+
+
+
+/*  Menu Page  */
 #Menu{
     margin: 20px auto;
     width: 75%;
@@ -108,7 +127,7 @@ h1 span{
 
 #Menu h2{
     color: #002;
-
+    text-align: center;
 }
 
 .food-container{
@@ -125,7 +144,7 @@ h1 span{
 
 .food img{
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all .5s ;
 }
 
 .food-info{
@@ -137,10 +156,12 @@ h1 span{
 }
 
 .food img:hover{
-    transform: scale(1.1rem);
+    transform: scale(1.3rem);
+    cursor: pointer;
+    border-radius: 20px;
 }
 
-#Menu button, .main button{
+#Menu button{ 
     border-color: #003;
     color: #003;
     margin: 0;
@@ -151,44 +172,20 @@ h1 span{
     color: #ffc;
 
 }
-.main img{
-    width: 60%;
 
-}
-.main{
-    width: 75%;
-    height: auto;
-    padding: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
 
-#special{
-    margin: 3% 15%;
-}
 
-.main p{
-    line-height: 1.7rem;
-    margin: 12px 0;
-}
 
-#Cart-body{
-    display: flex;
-    justify-content: space-around;
-}
 
-.cart{
-    display: flex;
-    flex-direction: column;
-}
 
-.total{
-    background-color: #003;
-    color: white;
-}
 
+
+
+
+
+
+
+/* Sign Up Page */
 #Sign{
     width: 100%;
     display: flex;
@@ -202,7 +199,7 @@ h1 span{
     background-color: #003;
     padding: 10px 20px 20px;
     border-radius: 8px;
-    height: 70vh;
+    height: 78vh;
     width: 40%;
 }
 
@@ -273,4 +270,84 @@ label span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.other-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.other i{
+    background-color: none;
+    color: #ffc;
+    border: 1px solid #ffc;
+    font-size: 2rem;
+    padding: 10px 16px;
+    text-align: center;
+    border-radius: 13px;
+
+}
+
+.one i:hover{
+    background-color: #ffc;
+    color: #f21010;
+}
+
+.two i:hover{
+    background-color: #ffc;
+    color: #222;
+}
+
+.three i:hover{
+    background-color: #ffc;
+    color: #06f;
+}
+
+.Contact{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    height: 50vh;
+    gap: 4rem;
+}
+
+#C{
+    background-color: #000;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.col i{
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.col p{
+    color: #ffc;
+}
+.col p i{
+    font-size: 43px;
+}
+
+.fa-google:hover{
+    color: #f21010;
+}
+
+.fa-github:hover{
+    color: #555;
+}
+
+.fa-facebook-f:hover{
+    color: #06f;
 }

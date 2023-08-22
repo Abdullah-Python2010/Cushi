@@ -1,33 +1,24 @@
-const UserName = document.getElementById('Username');
 const Email = document.getElementById('email');
 const Password = document.getElementById('Password');
-const LogIn = document.querySelector('#btn2');
+const Confirm = document.getElementById('Password2');
 const SignUp = document.querySelector('#btn1');
 
 let Users = [];
 
 function Register(){
     let newUser= {
-        Name: UserName.value,
         email: Email.value,
         password: Password.value
     }
-    Users.push()
-    alert('SignUp Successful')
-}
-
-function Enter(){
-    for(var i in Users){ 
-        if (Users[i].Name == UserName.value){
-            if(Users[i].email == Email.value){
-                if(Users[i].password == Password.value){
-                    alert("Welcome " + Users[i].name);
-                }
-            }
-        }
-        else{alert("Wrong Username or Password")}
+    if(Password.value === Confirm.value && Password.length >= 8){
+        Users.push(newUser)
+        alert('Sign Up Succesful')
+    }
+    else{
+        delete newUser;
+        alert("Something Wrong with Your Password")
     }
 }
 
-LogIn.addEventListener('click', Enter);
+
 SignUp.addEventListener('click', Register)

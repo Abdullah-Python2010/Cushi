@@ -6,27 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cushi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body id="Sign">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link" >C.</a></li>
+            <li><a href="menu.html" class="link" ><i class="fa-solid fa-utensils"></i></a></li>
+            <li><a href="Sign_up.html" class="link" id="active"><i class="fa-solid fa-user-pen"></i></a></li>
+        </ul>  
+    </nav>
+
+
+
+
+
+
 
     <!---Main Content of the page--->
     <div class="Sign-up">
         <h2>C.</h2>
         <hr width="30%">
+        <div class="other-options">
+            <a href="" class="other one"><i class="fa-brands fa-google"></i></a>
+            <a href="" class="other two"><i class="fa-brands fa-github"></i></a>
+            <a href="" class="other three"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
         <form>
             <div class="input_div">
-                <label for="Username">Username</label>
-                <input type="text" name="Username" placeholder="e.g 'John Smith'" id="Username">
+                <label>Email</label>
+                <input required type="email" name="E-mail" placeholder="e.g 'JohnSmith@gmail.com'" id="email">
             </div>
 
             <div class="input_div">
-                <label for="E-mail">Email</label>
-                <input type="email" name="E-mail" placeholder="e.g 'JohnSmith@gmail.com'" id="email">
+                <label>Password</label>
+                <input required type="password" name="Password" id="Password" placeholder="Password">
             </div>
 
             <div class="input_div">
-                <label for="Password">Password</label>
-                <input type="password" name="Password" id="Password">
+                <label>Confirm</label>
+                <input required type="password" name="Password" id="Password2" placeholder="Confirm Password">
             </div>
 
             <input type="checkbox"> <label>I agree to the <span>Terms and Conditions</span></label>
@@ -34,12 +53,13 @@
 
             <div class="btns">
                 <button class="btn" id="btn1">Sign Up</button>
-                <button class="btn second" id="btn2">Sign In</button>
             </div>
 
         </form>
 
     </div>
+
+
 
     <script src="main.js"></script>
 </body>
